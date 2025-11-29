@@ -60,17 +60,17 @@
     };
 }; // <--- ★★★ 여기 세미콜론(;)과 괄호(})가 반드시 있어야 합니다!
 &mmv_input_listener {
-    /* 레이어 1, 8일 때는 1/5로 줄여라! */
+    /* 레이어 2일 때는 1/5로 줄여라! */
 
     layer_slow {
-        layers = <1>;
+        layers = <2>;
         input-processors = <&zip_xy_scaler 25 100>;
     };
 
-    /* 레이어 2, 9일 때는 3/2(1.5배)로 늘려라! */
+    /* 레이어 1일 때는 3/2(1.5배)로 늘려라! */
 
     layer_fast {
-        layers = <2>;
+        layers = <1>;
         input-processors = <&zip_xy_scaler 150 100>;
     };
 };
