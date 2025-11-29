@@ -271,7 +271,7 @@
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <35 36>;
+            key-positions = <35 34>;
         };
     };
 
