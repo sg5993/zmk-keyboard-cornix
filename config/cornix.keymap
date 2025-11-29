@@ -33,15 +33,15 @@
 #define KEYS_T LH1 LH0 RH0 RH1
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     /* 스크롤 스케일러 */
+
     zip_scroll_scaler: zip_scroll_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -51,6 +51,7 @@
     };
 
     /* 방금 추가한 마우스 XY 스케일러 */
+
     zip_xy_scaler: zip_xy_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -58,14 +59,16 @@
         codes = <INPUT_REL_X INPUT_REL_Y>;
     };
 }; // <--- ★★★ 여기 세미콜론(;)과 괄호(})가 반드시 있어야 합니다!
-
 &mmv_input_listener {
     /* 레이어 1, 8일 때는 1/5로 줄여라! */
+
     layer_slow {
         layers = <1>;
         input-processors = <&zip_xy_scaler 1 5>;
     };
+
     /* 레이어 2, 9일 때는 3/2(1.5배)로 늘려라! */
+
     layer_fast {
         layers = <2>;
         input-processors = <&zip_xy_scaler 3 2>;
@@ -286,10 +289,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB           &kp Q         &kp W         &kp E  &kp R  &kp T                             &kp Y      &kp U  &kp I      &kp O    &kp P          &kp ESCAPE
-&kp BACKSPACE     &kp A         &kp S         &kp D  &kp F  &kp G                             &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT    &kp Z         &kp X         &kp C  &kp V  &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 6  &mo 3  &kp SPACE                         &kp SPACE  &mo 5  &none      &none    &none          &none
+&kp TAB           &kp Q  &kp W         &kp E  &kp R  &kp T                             &kp Y      &kp U  &kp I         &kp O    &kp P          &kp ESCAPE
+&kp BACKSPACE     &kp A  &kp S         &kp D  &kp F  &kp G                             &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT    &kp Z  &kp X         &kp C  &kp V  &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
+&kp LEFT_CONTROL  &mo 4  &kp LEFT_ALT  &mo 6  &mo 3  &kp SPACE                         &kp SPACE  &mo 5  &kp LEFT_WIN  &none    &none          &none
             >;
 
             sensor-bindings =
