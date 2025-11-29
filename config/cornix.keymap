@@ -78,11 +78,14 @@
 };
 
 /* 2. ★추가됨★ 스크롤 리스너 (Layer 2 -> 1/5 감속) */
+
 &msc_input_listener {
     /* 기본은 1:1 (위 define값 40 사용) */
+
     input-processors = <&zip_scroll_scaler 1 1>;
 
     /* Layer 2가 켜지면 스크롤도 정밀하게 (1/5 속도) */
+
     layer_sniper_scroll {
         layers = <2>;
         input-processors = <&zip_scroll_scaler 1 5>;
@@ -296,10 +299,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB           &kp Q         &kp W  &kp E  &kp R  &kp T                             &kp Y      &kp U  &kp I         &kp O    &kp P          &kp ESCAPE
-&kp BACKSPACE     &kp A         &kp S  &kp D  &kp F  &kp G                             &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT    &kp Z         &kp X  &kp C  &kp V  &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &mo 4  &mo 6  &mo 3  &kp SPACE                         &kp SPACE  &mo 5  &kp LEFT_WIN  &none    &none          &none
+&kp TAB           &kp Q  &kp W  &kp E  &kp R          &kp T                             &kp Y      &kp U  &kp I         &kp O    &kp P          &kp ESCAPE
+&mo 6             &kp A  &kp S  &kp D  &kp F          &kp G                             &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C  &kp V          &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
+&kp LEFT_CONTROL  &mo 4  &mo 4  &mo 3  &kp BACKSPACE  &kp SPACE                         &kp SPACE  &mo 5  &kp LEFT_WIN  &none    &none          &none
             >;
 
             sensor-bindings =
