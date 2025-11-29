@@ -302,7 +302,7 @@
 &kp TAB           &kp Q  &kp W  &kp E  &kp R          &kp T                             &kp Y      &kp U  &kp I         &kp O    &kp P          &kp ESCAPE
 &mo 3             &kp A  &kp S  &kp D  &kp F          &kp G                             &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C  &kp V          &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-&kp LEFT_CONTROL  &mo 4  &mo 4  &mo 6  &kp BACKSPACE  &kp SPACE                         &kp SPACE  &to 1  &kp LEFT_WIN  &none    &mo 5          &none
+&kp LEFT_CONTROL  &mo 4  &to 1  &mo 6  &kp BACKSPACE  &kp SPACE                         &kp SPACE  &mo 5  &kp LEFT_WIN  &none    &mo 5          &none
             >;
 
             sensor-bindings =
