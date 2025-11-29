@@ -41,20 +41,23 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    /* 스크롤 스케일러 */
     zip_scroll_scaler: zip_scroll_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
         codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
         track-remainders;
+    };
 
+    /* 방금 추가한 마우스 XY 스케일러 */
     zip_xy_scaler: zip_xy_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
         codes = <INPUT_REL_X INPUT_REL_Y>;
     };
-};
+}; // <--- ★★★ 여기 세미콜론(;)과 괄호(})가 반드시 있어야 합니다!
 
 &mmv_input_listener {
     /* 레이어 1, 8일 때는 1/5로 줄여라! */
