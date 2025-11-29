@@ -293,6 +293,30 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <42 25>;
         };
+
+        ee {
+            bindings = <&to 1>;
+            key-positions = <26 42>;
+            layers = <0>;
+        };
+
+        eee {
+            bindings = <&to 0>;
+            key-positions = <26 42>;
+            layers = <1 2>;
+        };
+
+        eew {
+            bindings = <&to 1>;
+            key-positions = <42 25>;
+            layers = <0>;
+        };
+
+        eeew {
+            bindings = <&to 0>;
+            key-positions = <42 25>;
+            layers = <1 2>;
+        };
     };
 
     keymap {
@@ -312,7 +336,7 @@
 &kp TAB           &kp Q  &kp W  &kp E  &kp R          &kp T                             &kp Y      &kp U  &kp I      &kp O         &kp P          &kp ESCAPE
 &mo 3             &kp A  &kp S  &kp D  &kp F          &kp G                             &kp H      &kp J  &kp K      &kp L         &kp SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C  &kp V          &kp B      &kp C_MUTE  &mkp LCLK  &kp N      &kp M  &kp COMMA  &kp DOT       &kp FSLH       &kp RSHFT
-&kp LEFT_CONTROL  &mo 4  &to 1  &mo 6  &kp BACKSPACE  &kp SPACE                         &kp SPACE  &mo 5  &mo 4      &kp LEFT_WIN  &to 1          &none
+&kp LEFT_CONTROL  &mo 4  &to 1  &mo 6  &kp BACKSPACE  &kp SPACE                         &kp SPACE  &mo 5  &mo 4      &kp LEFT_ALT  &to 1          &kp LEFT_WIN
             >;
 
             sensor-bindings =
@@ -331,10 +355,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &none           &mkp MCLK      &msc SCRL_UP    &kp LC(C)  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &mmv MOVE_UP    &kp TAB          &none            &trans
-&trans  &msc SCRL_LEFT  &mkp RCLK      &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &trans
-&trans  &mo 2           &kp LC(MINUS)  &kp LC(PLUS)    &kp LC(A)  &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
-&trans  &mo 2           &to 0          &trans          &trans     &trans                           &trans           &trans          &trans          &none            &to 0            &none
+&trans  &none           &mkp MCLK  &msc SCRL_UP    &kp LC(C)  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &mmv MOVE_UP    &kp TAB          &none            &trans
+&trans  &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &trans
+&trans  &mo 2           &to 0      &kp LC(PLUS)    &kp LC(A)  &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
+&trans  &mo 2           &to 0      &trans          &trans     &trans                           &trans           &trans          &trans          &none            &to 0            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -343,10 +367,10 @@
         mouse_fast {
             display-name = "mFAST";
             bindings = <
-&trans  &none           &mkp MCLK      &msc SCRL_UP    &kp LC(C)  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &trans          &kp TAB       &none            &trans
-&trans  &msc SCRL_LEFT  &mkp RCLK      &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_RIGHT                  &kp LC(Z)        &trans          &trans          &trans        &none            &trans
-&trans  &trans          &kp LC(MINUS)  &kp LC(PLUS)    &kp LC(A)  &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans          &trans         &trans          &trans     &trans                           &trans           &trans          &trans          &none         &none            &none
+&trans  &none           &mkp MCLK  &msc SCRL_UP    &kp LC(C)  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &trans          &kp TAB       &none            &trans
+&trans  &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_RIGHT                  &kp LC(Z)        &trans          &trans          &trans        &none            &trans
+&trans  &trans          &trans     &kp LC(PLUS)    &kp LC(A)  &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans          &trans     &trans          &trans     &trans                           &trans           &trans          &trans          &none         &none            &none
             >;
 
             sensor-bindings =
