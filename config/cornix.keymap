@@ -289,11 +289,6 @@
             key-positions = <45 36>;
         };
 
-        kte2 {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <42 25>;
-        };
-
         ee {
             bindings = <&to 1>;
             key-positions = <26 42>;
