@@ -312,6 +312,18 @@
             key-positions = <42 25>;
             layers = <1 2>;
         };
+
+        ssee {
+            bindings = <&to 1>;
+            key-positions = <42 14>;
+            layers = <0>;
+        };
+
+        eesszkl {
+            bindings = <&to 0>;
+            key-positions = <42 14>;
+            layers = <1 2>;
+        };
     };
 
     keymap {
