@@ -270,8 +270,8 @@
         };
 
         comma {
-            bindings = <&kp COMMA>;
-            key-positions = <35 34>;
+            bindings = <&kp F16>;
+            key-positions = <35 36>;
         };
     };
 
