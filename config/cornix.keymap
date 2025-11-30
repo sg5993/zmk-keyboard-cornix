@@ -362,10 +362,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &none           &mkp MCLK  &msc SCRL_UP    &msc SCRL_UP    &kp LC(V)                        &kp PRINTSCREEN  &kp LALT         &mmv MOVE_UP    &kp TAB          &none            &trans
-&to 0   &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK       &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &trans
-&trans  &mo 2           &to 0      &kp LC(PLUS)    &kp LC(A)       &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
-&trans  &trans          &to 0      &trans          &msc SCRL_DOWN  &msc SCRL_UP                     &msc SCRL_LEFT   &msc SCRL_RIGHT  &trans          &none            &to 0            &none
+&trans  &none           &mkp MCLK  &msc SCRL_UP    &msc SCRL_UP    &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &mmv MOVE_UP    &kp TAB          &none            &trans
+&to 0   &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK       &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &trans
+&trans  &mo 2           &to 0      &kp LC(PLUS)    &kp LC(A)       &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
+&trans  &trans          &to 0      &trans          &msc SCRL_DOWN  &msc SCRL_UP                     &msc SCRL_LEFT   &mo 2           &trans          &none            &to 0            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
