@@ -82,7 +82,7 @@
 &msc_input_listener {
     /* 기본은 1:1 (위 define값 40 사용) */
 
-    input-processors = <&zip_scroll_scaler 6 1>;
+    input-processors = <&zip_scroll_scaler 4 1>;
 
     /* Layer 2가 켜지면 스크롤도 정밀하게 (1/5 속도) */
 
