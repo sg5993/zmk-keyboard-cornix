@@ -92,7 +92,6 @@
     };
 };
 
-
 &msc {
     acceleration-exponent = <2>;      // 0
     time-to-max-speed-ms = <0>;       // 300
@@ -342,7 +341,7 @@
 &hm ESCAPE TAB    &kp Q           &kp W         &kp E    &kp R    &kp T                                 &kp Y      &kp U    &kp I      &kp O         &kp P          &kp DELETE
 &to 6             &kp A           &lt 4 S       &lt 3 D  &lt 5 F  &kp G                                 &kp H      &lt 5 J  &lt 3 K    &lt 4 L       &kp SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT    &lt 1 Z         &kp X         &kp C    &kp V    &kp B          &kp C_MUTE  &mkp LCLK  &kp N      &kp M    &kp COMMA  &kp DOT       &lt 1 SLASH    &kp RSHFT
-&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 3    &mo 1    &kp BACKSPACE                         &kp SPACE  &mo 7    &mo 4      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 3    &mo 1    &kp BACKSPACE                         &kp SPACE  &mo 5    &mo 4      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
