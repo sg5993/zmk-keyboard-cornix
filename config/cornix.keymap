@@ -15,7 +15,7 @@
 // quick tapping for shift
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 70
 #define BASE 0
@@ -82,13 +82,13 @@
 &msc_input_listener {
     /* 기본은 1:1 (위 define값 40 사용) */
 
-    input-processors = <&zip_scroll_scaler 8 1>;
+    input-processors = <&zip_scroll_scaler 12 1>;
 
     /* Layer 2가 켜지면 스크롤도 정밀하게 (1/5 속도) */
 
     layer_sniper_scroll {
         layers = <2>;
-        input-processors = <&zip_scroll_scaler 3 2>;
+        input-processors = <&zip_scroll_scaler 3 3>;
     };
 };
 
