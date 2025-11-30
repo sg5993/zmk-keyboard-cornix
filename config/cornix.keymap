@@ -92,7 +92,6 @@
     };
 };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
 
 &msc {
     acceleration-exponent = <2>;      // 0
