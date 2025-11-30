@@ -203,8 +203,19 @@
 
             flavor = "tap-preferred";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
+        };
+
+        lt_layer: lt_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+
+            flavor = "hold-preferred";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;
+            label = "LT_LAYER";
         };
     };
 
