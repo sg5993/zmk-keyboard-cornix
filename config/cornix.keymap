@@ -301,37 +301,37 @@
 
         ee {
             bindings = <&to 1>;
-            key-positions = <26 42>;
+            key-positions = <26 42 25 14>;
             layers = <0>;
         };
 
         eee {
             bindings = <&to 0>;
-            key-positions = <26 42>;
+            key-positions = <26 42 14 25>;
             layers = <1 2>;
         };
 
         eew {
             bindings = <&to 1>;
-            key-positions = <42 25>;
+            key-positions = <42 25 14>;
             layers = <0>;
         };
 
         eeew {
             bindings = <&to 0>;
-            key-positions = <42 25>;
+            key-positions = <42 25 14>;
             layers = <1 2>;
         };
 
         ssee {
             bindings = <&to 1>;
-            key-positions = <42 14>;
+            key-positions = <42 14 13>;
             layers = <0>;
         };
 
         eesszkl {
             bindings = <&to 0>;
-            key-positions = <42 14>;
+            key-positions = <42 14 13>;
             layers = <1 2>;
         };
     };
@@ -372,10 +372,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &none           &mkp MCLK  &msc SCRL_UP    &msc SCRL_UP  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &mmv MOVE_UP    &kp TAB          &none            &trans
-&to 0   &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK     &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &trans
-&trans  &mo 2           &to 0      &kp LC(PLUS)    &kp LC(A)     &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
-&trans  &trans          &to 0      &trans          &mo 2         &msc SCRL_UP                     &kp SPACE        &kp BACKSPACE   &trans          &none            &to 0            &none
+&trans  &none           &mkp MCLK      &msc SCRL_UP    &kp LC(C)  &kp LC(V)                        &kp PRINTSCREEN  &kp LALT        &mmv MOVE_UP    &kp TAB          &none            &trans
+&to 0   &msc SCRL_LEFT  &mkp RCLK      &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 2            &trans
+&trans  &mo 2           &kp LC(MINUS)  &kp LC(PLUS)    &kp LC(A)  &kp LC(X)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
+&trans  &trans          &trans         &trans          &mo 2      &msc SCRL_UP                     &mo 2            &mo 2           &trans          &none            &trans           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
