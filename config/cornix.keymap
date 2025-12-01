@@ -346,6 +346,16 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <45 48>;
         };
+
+        hy3 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <48 44>;
+        };
+
+        hy4 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <45 49>;
+        };
     };
 
     keymap {
@@ -365,7 +375,7 @@
 &hm ESCAPE TAB    &kp Q           &kp W         &kp E    &kp R    &kp T                                         &kp Y              &kp U  &kp I      &kp O         &kp P          &kp DELETE
 &kp ESCAPE        &kp A           &lt 4 S       &lt 4 D  &lt 4 F  &kp G                                         &kp H              &kp J  &kp K      &kp L         &kp SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT    &lt 1 Z         &kp X         &kp C    &kp V    &kp B                  &kp C_MUTE  &mkp LCLK  &kp N              &kp M  &kp COMMA  &kp DOT       &kp SLASH      &kp RSHFT
-&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 4    &mo 3    &lt_layer 1 BACKSPACE                         &lt_layer 6 SPACE  &mo 5  &mo 4      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 4    &mo 3    &lt_layer 1 BACKSPACE                         &lt_layer 6 SPACE  &mo 5  &mo 7      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
@@ -482,7 +492,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &mo 4         &mo 4                   &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
