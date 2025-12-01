@@ -203,7 +203,7 @@
 
             flavor = "tap-preferred";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <170>;
             require-prior-idle-ms = <125>;
             retro-tap;
             hold-trigger-key-positions = <6 7 8 9 11 10 18 19 20 21 22 31 32 33 34 35 36 23 23 37 49 44 45 46 47 48>;
@@ -362,10 +362,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&hm ESCAPE TAB    &kp Q           &kp W         &kp E    &kp R    &kp T                                         &kp Y              &kp U    &kp I      &kp O         &kp P          &kp DELETE
-&kp BACKSPACE     &kp A           &lt 4 S       &lt 4 D  &lt 4 F  &kp G                                         &kp H              &lt 5 J  &lt 3 K    &lt 4 L       &kp SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT    &lt 1 Z         &kp X         &kp C    &kp V    &kp B                  &kp C_MUTE  &mkp LCLK  &kp N              &kp M    &kp COMMA  &kp DOT       &lt 1 SLASH    &kp RSHFT
-&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 4    &mo 3    &lt_layer 1 BACKSPACE                         &lt_layer 6 SPACE  &mo 5    &mo 4      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
+&hm ESCAPE TAB    &kp Q           &kp W         &kp E    &kp R    &kp T                                         &kp Y              &kp U  &kp I      &kp O         &kp P          &kp DELETE
+&kp BACKSPACE     &kp A           &lt 4 S       &lt 4 D  &lt 4 F  &kp G                                         &kp H              &kp J  &kp K      &kp L         &kp SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT    &lt 1 Z         &kp X         &kp C    &kp V    &kp B                  &kp C_MUTE  &mkp LCLK  &kp N              &kp M  &kp COMMA  &kp DOT       &lt 1 SLASH    &kp RSHFT
+&kp LEFT_CONTROL  &lt 6 LEFT_WIN  &kp LEFT_ALT  &mo 4    &mo 3    &lt_layer 1 BACKSPACE                         &lt_layer 6 SPACE  &mo 5  &mo 4      &kp LEFT_ALT  &kp LEFT_WIN   &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
