@@ -334,6 +334,16 @@
             key-positions = <42 14 13>;
             layers = <1 2>;
         };
+
+        hy {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <45 35>;
+        };
+
+        hy2 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <45 48>;
+        };
     };
 
     keymap {
@@ -429,7 +439,7 @@
 &none  &kp F1   &kp F2   &kp F3  &kp F4   &kp F5                   &none   &kp N7        &kp N8        &kp N9        &kp F16  &kp BACKSPACE
 &none  &kp F6   &kp F7   &kp F8  &kp F9   &kp F10                  &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F15  &kp BACKSPACE
 &none  &kp F11  &kp F12  &none   &kp F11  &kp F12  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0   &kp BACKSPACE
-&none  &none    &none    &none   &mo 1    &mo 4                    &trans  &kp N0        &kp N0        &none         &none    &none
+&none  &none    &none    &none   &mo 4    &mo 4                    &trans  &kp N0        &kp N0        &none         &none    &none
             >;
         };
 
