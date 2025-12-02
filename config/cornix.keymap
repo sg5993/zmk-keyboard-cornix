@@ -482,10 +482,10 @@
         Adjust_layer {
             display-name = "ADJ";
             bindings = <
-&trans  &none   &none          &none         &kp LC(C)  &kp LC(V)                      &kp PRINTSCREEN  &kp LALT  &kp UP_ARROW    &kp TAB    &none   &trans
-&trans  &none   &none          &none         &kp LC(Z)  &kp LC(LS(Z))                  &kp LC(Z)        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none   &trans
-&trans  &none   &kp LC(MINUS)  &kp LC(PLUS)  &kp LC(A)  &kp LC(X)      &trans  &trans  &kp LS(LC(Z))    &none     &none           &none      &none   &trans
-&trans  &trans  &trans         &trans        &mo 4      &mo 4                          &trans           &trans    &trans          &none      &trans  &none
+&trans  &kp LA(F4)     &none         &kp LS(LC(Z))  &kp LC(Z)  &kp LC(LS(Z))                  &kp PRINTSCREEN  &kp LALT  &kp UP_ARROW    &kp TAB    &none   &trans
+&trans  &kp LC(F4)     &none         &kp LC(V)      &kp LC(C)  &kp LC(V)                      &kp LC(Z)        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none   &trans
+&trans  &kp LC(MINUS)  &kp LC(PLUS)  &kp LC(X)      &kp LC(A)  &kp LC(X)      &trans  &trans  &kp LS(LC(Z))    &none     &none           &none      &none   &trans
+&trans  &trans         &trans        &trans         &mo 4      &mo 4                          &trans           &trans    &trans          &none      &trans  &none
             >;
 
             sensor-bindings =
