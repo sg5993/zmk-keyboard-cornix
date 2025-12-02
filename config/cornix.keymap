@@ -297,7 +297,7 @@
 
         tk34 {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <43 38>;
+            key-positions = <43 38 39>;
         };
 
         tke5 {
@@ -341,13 +341,13 @@
 
         ssee {
             bindings = <&to 1>;
-            key-positions = <42 14 13>;
+            key-positions = <42 24>;
             layers = <0>;
         };
 
         eesszkl {
             bindings = <&to 0>;
-            key-positions = <42 14 13>;
+            key-positions = <42 24>;
             layers = <1 2>;
         };
 
