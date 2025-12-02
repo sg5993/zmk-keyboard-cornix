@@ -233,6 +233,17 @@
             label = "LT_LEFT";
             hold-trigger-key-positions = <0 1 2 4 5 3 0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 38 39 40 41 42 43 30>;
         };
+
+        lt_for_space: lt_for_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            label = "LT_FOR_SPACE";
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
