@@ -375,6 +375,11 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <44 36>;
         };
+
+        hy6 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <21 45>;
+        };
     };
 
     keymap {
