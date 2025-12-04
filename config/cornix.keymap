@@ -424,7 +424,7 @@
 &kp ESCAPE        &kp Q         &kp W         &kp E  &kp R  &kp T                                         &kp Y                  &kp U  &kp I      &kp O         &kp P             &kp DELETE
 &kp TAB           &kp A         &kp S         &kp D  &kp F  &kp G                                         &kp H                  &kp J  &kp K      &kp L         &kp SEMICOLON     &kp ENTER
 &kp LEFT_SHIFT    &lt 6 Z       &kp X         &kp C  &kp V  &kp B                  &kp C_MUTE  &mkp LCLK  &kp N                  &kp M  &kp COMMA  &kp DOT       &lt_left 3 SLASH  &kp RSHFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &mo 5  &lt_layer 1 BACKSPACE                         &lt_for_space 4 SPACE  &mo 5  &mo 6      &kp LEFT_ALT  &kp PRINTSCREEN   &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &mo 1  &lt_layer 5 BACKSPACE                         &lt_for_space 7 SPACE  &mo 4  &mo 6      &kp LEFT_ALT  &kp PRINTSCREEN   &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
@@ -480,7 +480,7 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                  &kp LCTRL             &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans     &trans           &kp F14      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N1                       &kp NON_US_BACKSLASH  &kp EQUAL       &kp PLUS      &kp SQT               &kp DQT                &trans
 &trans     &trans           &kp F13      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp N0       &trans  &trans  &kp PIPE              &kp UNDERSCORE  &kp MINUS     &kp TILDE             &kp QUESTION           &trans
-&none      &none            &none        &trans            &trans             &trans                       &kp UNDERSCORE        &mo 7           &trans        &kp F13               &kp F14                &none
+&none      &none            &none        &trans            &trans             &trans                       &kp UNDERSCORE        &mo 0           &trans        &kp F13               &kp F14                &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -539,11 +539,15 @@
         Function {
             display-name = "FUNC";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4   &kp F5                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9   &kp F10                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &none   &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans  &mo 6    &mo 6                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1            &kp F2        &kp F3        &kp F4            &kp F5                   &kp F6         &kp F7    &kp F8          &kp F9        &kp F10          &trans
+&trans  &sk LEFT_CONTROL  &kp LEFT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL  &kp F11                  &kp F12        &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &none             &none         &none         &none             &none    &trans  &trans  &kp LS(LC(Z))  &none     &none           &none         &none            &trans
+&trans  &trans            &trans        &trans        &mo 5             &mo 5                    &trans         &trans    &trans          &none         &trans           &none
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
