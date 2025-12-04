@@ -243,6 +243,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <250>;
             label = "LT_FOR_SPACE";
+            require-prior-idle-ms = <49>;
         };
 
         lt_for_space2: lt_for_space2 {
