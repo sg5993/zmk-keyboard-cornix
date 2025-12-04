@@ -240,10 +240,11 @@
             bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <150>;
             label = "LT_FOR_SPACE";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <0>;
+            retro-tap;
         };
 
         lt_for_space2: lt_for_space2 {
