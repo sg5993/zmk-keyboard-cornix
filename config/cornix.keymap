@@ -239,9 +239,9 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
 
-            flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <150>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <250>;
             label = "LT_FOR_SPACE";
             retro-tap;
         };
