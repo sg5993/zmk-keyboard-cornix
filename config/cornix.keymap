@@ -282,16 +282,6 @@
             layers = <0 1>;
         };
 
-        layer3 {
-            bindings = <&kp N3>;
-            key-positions = <5 6>;
-        };
-
-        layer4 {
-            bindings = <&kp N4>;
-            key-positions = <5 6>;
-        };
-
         mouseIn {
             bindings = <&to 1>;
             key-positions = <25 14 26 3 15 2 13>;
