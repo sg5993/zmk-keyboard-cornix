@@ -478,10 +478,10 @@
         Adjust_layer {
             display-name = "ADJ";
             bindings = <
-&trans     &kp F1                &kp F2         &kp F3        &kp F4            &kp F5                            &kp F6         &kp F7     &kp UP_ARROW    &kp F9     &kp F10  &trans
-&kp LC(Y)  &kp LC(LEFT_CONTROL)  &kp LC(LS(Z))  &sk LEFT_ALT  &sk LEFT_CONTROL  &kp F11                           &kp F12        &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp F8   &trans
-&kp TAB    &kp TAB               &kp LC(X)      &kp LC(A)     &kp LC(C)         &kp LC(V)         &trans  &trans  &kp LS(LC(Z))  &kp LC(Z)  &kp LC(Y)       &none      &none    &trans
-&trans     &kp LEFT_CONTROL      &trans         &trans        &sk LEFT_ALT      &sk LEFT_CONTROL                  &trans         &trans     &trans          &none      &trans   &none
+&trans   &kp F1                &kp F2         &kp F3        &kp F4            &kp F5                            &kp F6         &kp F7     &kp UP_ARROW    &kp F9     &kp F10  &trans
+&kp TAB  &kp LC(LEFT_CONTROL)  &kp LC(LS(Z))  &sk LEFT_ALT  &sk LEFT_CONTROL  &kp F11                           &kp F12        &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp F8   &trans
+&kp TAB  &kp TAB               &kp LC(X)      &kp LC(A)     &kp LC(C)         &kp LC(V)         &trans  &trans  &kp LS(LC(Z))  &kp LC(Z)  &kp LC(Y)       &none      &none    &trans
+&trans   &kp LEFT_CONTROL      &trans         &trans        &sk LEFT_ALT      &sk LEFT_CONTROL                  &trans         &trans     &trans          &none      &trans   &none
             >;
 
             sensor-bindings =
