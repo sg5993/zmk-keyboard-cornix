@@ -330,6 +330,11 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <21 45>;
         };
+
+        bacc {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <36 21>;
+        };
     };
 
     keymap {
