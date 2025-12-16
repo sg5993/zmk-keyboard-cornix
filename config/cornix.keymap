@@ -373,10 +373,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &none           &mkp MCLK  &msc SCRL_UP    &kp LC(MINUS)  &kp LC(PLUS)                     &kp PRINTSCREEN  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MCLK        &trans
-&trans  &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK      &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 2            &trans
-&trans  &mo 2           &kp LC(X)  &kp LC(A)       &kp LC(C)      &kp LC(V)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans
-&trans  &mo 2           &trans     &trans          &mo 2          &msc SCRL_UP                     &mo 2            &trans          &trans          &trans           &trans           &trans
+&trans  &none           &mkp MCLK  &msc SCRL_UP    &kp LC(MINUS)  &kp LC(PLUS)                     &kp PRINTSCREEN  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MCLK  &trans
+&trans  &msc SCRL_LEFT  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK      &msc SCRL_RIGHT                  &kp LC(Z)        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 2      &trans
+&trans  &mo 2           &kp LC(X)  &kp LC(A)       &kp LC(C)      &kp LC(V)        &trans  &trans  &kp LS(LC(Z))    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &mo 2      &trans
+&trans  &mo 2           &trans     &trans          &mo 2          &msc SCRL_UP                     &mo 2            &trans          &trans          &trans           &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -461,7 +461,7 @@
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &none        &none  &none   &none  &none  &none
 &to 0           &none          &none          &none          &none          &none                          &none        &none  &none   &none  &none  &none
-&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans  &trans  &bootloader  &none  &none   &none  &none  &none
+&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans  &trans  &bootloader  &none  &none   &none  &mo 1  &none
 &none           &none          &none          &none          &none          &none                          &mo 1        &none  &kp N7  &none  &none  &none
             >;
         };
