@@ -240,8 +240,8 @@
             bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <185>;
-            quick-tap-ms = <155>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <160>;
             label = "LT_FOR_SPACE";
         };
 
