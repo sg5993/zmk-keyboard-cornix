@@ -462,17 +462,17 @@
 &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &none        &none  &none   &none  &none  &none
 &to 0           &none          &none          &none          &none          &none                          &none        &none  &none   &none  &none  &none
 &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans  &trans  &bootloader  &none  &none   &none  &mo 1  &none
-&none           &none          &none          &none          &none          &none                          &mo 1        &none  &kp N7  &none  &none  &none
+&none           &none          &none          &none          &none          &none                          &mo 1        &to 7  &kp N7  &none  &none  &none
             >;
         };
 
         Function {
             display-name = "FUNC";
             bindings = <
-&trans  &kp F1            &kp F2        &kp F3        &kp F4            &kp F5                   &kp F6         &kp F7    &kp F8          &kp F9        &kp F10          &trans
-&trans  &sk LEFT_CONTROL  &kp LEFT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL  &kp F11                  &kp F12        &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &none             &none         &none         &none             &none    &trans  &trans  &kp LS(LC(Z))  &none     &none           &none         &none            &trans
-&trans  &trans            &trans        &trans        &mo 5             &mo 5                    &trans         &trans    &trans          &none         &trans           &none
+&trans  &kp F1            &kp F2        &kp F3     &kp F4        &kp F5                   &kp F6         &kp F7    &kp UP          &kp F9     &kp F10  &trans
+&trans  &sk LEFT_CONTROL  &kp LEFT_ALT  &kp ENTER  &kp UP_ARROW  &kp F11                  &kp F12        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none    &trans
+&trans  &none             &none         &none      &none         &none    &trans  &trans  &kp LS(LC(Z))  &none     &none           &none      &none    &trans
+&trans  &trans            &trans        &trans     &mo 5         &mo 5                    &to 0          &to 0     &to 0           &none      &trans   &none
             >;
 
             sensor-bindings =
