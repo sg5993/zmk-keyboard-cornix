@@ -73,7 +73,7 @@
 
     layer_fast {
         layers = <1>;
-        input-processors = <&zip_xy_scaler 165 100>;
+        input-processors = <&zip_xy_scaler 155 100>;
     };
 };
 
