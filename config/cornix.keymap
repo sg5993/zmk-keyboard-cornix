@@ -66,14 +66,14 @@
 
     layer_slow {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 40 100>;
+        input-processors = <&zip_xy_scaler 35 100>;
     };
 
     /* 레이어 1일 때는 3/2(1.5배)로 늘려라! */
 
     layer_fast {
         layers = <1>;
-        input-processors = <&zip_xy_scaler 175 100>;
+        input-processors = <&zip_xy_scaler 170 100>;
     };
 };
 
